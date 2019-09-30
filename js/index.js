@@ -54,6 +54,21 @@ navItem[3].textContent = "Features";
 navItem[4].textContent = "About";
 navItem[5].textContent = "Product";
 
+const navColor = document.querySelectorAll("nav a");
+navColor.forEach(element => {
+  element.style.color ="#008000";
+});
+
+firstContent.textContent = "Energy";
+lastContent.textContent = "Sustainable";
+
+
+
+// cardTitle.forEach( element => {
+//   console.log(element);
+//   element.style.color = '#177B78';
+// });
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
