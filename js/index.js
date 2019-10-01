@@ -54,10 +54,7 @@ navItem[3].textContent = siteContent["nav"]["nav-item-4"];
 navItem[4].textContent = siteContent["nav"]["nav-item-5"];
 navItem[5].textContent = siteContent["nav"]["nav-item-6"];
 
-const navColor = document.querySelectorAll("nav");
-navColor.forEach(element => {
-  element.style.color ="#008000";
-});
+
 
 
 const firstContent = document.createElement('a')
@@ -68,10 +65,13 @@ lastContent.textContent = "Sustainable";
 
 const parentNav = document.querySelector('nav');
 
-parentNav.append(firstContent);
-parentNav.prepend(lastContent);
+parentNav.prepend(firstContent);
+parentNav.appendChild(lastContent);
 
-
+const navColor = document.querySelectorAll("nav a");
+navColor.forEach(element => {
+  element.style.color = "#008000";
+});
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
