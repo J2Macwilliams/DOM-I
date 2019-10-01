@@ -54,20 +54,24 @@ navItem[3].textContent = "Features";
 navItem[4].textContent = "About";
 navItem[5].textContent = "Product";
 
-const navColor = document.querySelectorAll("nav a");
+const navColor = document.querySelectorAll("nav");
 navColor.forEach(element => {
   element.style.color ="#008000";
 });
 
+
+const firstContent = document.createElement('a')
 firstContent.textContent = "Energy";
+
+const lastContent = document.createElement('a')
 lastContent.textContent = "Sustainable";
 
+const parentNav = document.querySelector('nav');
+
+parentNav.append(firstContent);
+parentNav.prepend(lastContent);
 
 
-// cardTitle.forEach( element => {
-//   console.log(element);
-//   element.style.color = '#177B78';
-// });
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
@@ -75,7 +79,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // CTA -------------------------------------------
 const ctaTitle = document.querySelector(".cta-text h1");
-ctaTitle.textContent = "DOM Is Awesome";
+ctaTitle.style.whiteSpace = 'pre';
+ctaTitle.textContent = "DOM \n Is \n Awesome";
 
 const ctaButton = document.querySelector(".cta-text button");
 ctaButton.textContent = "Get Started";
@@ -134,6 +139,7 @@ const contactTitle = document.querySelector(".contact h4");
 contactTitle.textContent = "Contact";
 
 const contactInfo1 = document.querySelectorAll(".contact p")[0];
+contactInfo1.style.whiteSpace = 'pre';
 contactInfo1.textContent = "123 Way 456 Street \n Somewhere, USA";
 
 const contactInfo2 = document.querySelectorAll(".contact p")[1];
