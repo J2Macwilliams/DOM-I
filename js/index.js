@@ -47,12 +47,12 @@ const siteContent = {
 
 
 let navItem = document.querySelectorAll('nav a');
-navItem[0].textContent = "Services";
-navItem[1].textContent = "Product";
-navItem[2].textContent = "Vision";
-navItem[3].textContent = "Features";
-navItem[4].textContent = "About";
-navItem[5].textContent = "Product";
+navItem[0].textContent = siteContent["nav"]["nav-item-1"];
+navItem[1].textContent = siteContent["nav"]["nav-item-2"];
+navItem[2].textContent = siteContent["nav"]["nav-item-3"];
+navItem[3].textContent = siteContent["nav"]["nav-item-4"];
+navItem[4].textContent = siteContent["nav"]["nav-item-5"];
+navItem[5].textContent = siteContent["nav"]["nav-item-6"];
 
 const navColor = document.querySelectorAll("nav");
 navColor.forEach(element => {
@@ -83,7 +83,7 @@ ctaTitle.style.whiteSpace = 'pre';
 ctaTitle.textContent = "DOM \n Is \n Awesome";
 
 const ctaButton = document.querySelector(".cta-text button");
-ctaButton.textContent = "Get Started";
+ctaButton.textContent = siteContent["cta"]["button"];
 
 const ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
@@ -92,62 +92,54 @@ ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 // Main Content-------------------------------------
 
 
-const topContentTitle1 = document.querySelectorAll(".top-content .text-content h4")[0];
-console.log(topContentTitle1);
-topContentTitle1.textContent = 'Features';
+const topTitle1 = document.querySelectorAll(".top-content .text-content h4")[0];
+topTitle1.textContent = siteContent["main-content"]["features-h4"];
 
 const topContent1 = document.querySelectorAll(".top-content .text-content p")[0];
-console.log(topContent1);
-topContent1.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+topContent1.textContent = siteContent["main-content"]["features-content"];
 
 
-const topContentTitle2 = document.querySelectorAll(".top-content .text-content h4")[1];
-
-topContentTitle2.textContent = 'About';
+const topTitle2 = document.querySelectorAll(".top-content .text-content h4")[1];
+topTitle2.textContent = siteContent["main-content"]["about-h4"];
 
 const topContent2 = document.querySelectorAll(".top-content .text-content p")[1];
-
-topContent2.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+topContent2.textContent = siteContent["main-content"]["about-content"];
 
 let midImg = document.getElementById("middle-img");
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 const bottomTitle1 = document.querySelectorAll(".bottom-content .text-content h4")[0];
-
-bottomTitle1.textContent = 'Services';
+bottomTitle1.textContent = siteContent["main-content"]["services-h4"];
 
 const bottomContent1 = document.querySelectorAll(".bottom-content .text-content p")[0];
-
-bottomContent1.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+bottomContent1.textContent = siteContent["main-content"]["services-content"];
 
 const bottomTitle2 = document.querySelectorAll(".bottom-content .text-content h4")[1];
-
-bottomTitle2.textContent = 'Product';
+bottomTitle2.textContent = siteContent["main-content"]["product-h4"];
 
 const bottomContent2 = document.querySelectorAll(".bottom-content .text-content p")[1];
-
-bottomContent2.textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+bottomContent2.textContent = siteContent["main-content"]["product-content"];
 
 const bottomTitle3 = document.querySelectorAll(".bottom-content .text-content h4")[2];
-bottomTitle3.textContent = 'Vision';
+bottomTitle3.textContent = siteContent["main-content"]["vision-h4"];
 
 const bottomContent3 = document.querySelectorAll(".bottom-content .text-content p")[2];
-bottomContent3.textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+bottomContent3.textContent = siteContent["main-content"]["vision-content"];
 
 // Contact ------------------------------------
 const contactTitle = document.querySelector(".contact h4");
-contactTitle.textContent = "Contact";
+contactTitle.textContent = siteContent["contact"]["contact-h4"];
 
 const contactInfo1 = document.querySelectorAll(".contact p")[0];
 contactInfo1.style.whiteSpace = 'pre';
 contactInfo1.textContent = "123 Way 456 Street \n Somewhere, USA";
 
 const contactInfo2 = document.querySelectorAll(".contact p")[1];
-contactInfo2.textContent = "1 (888) 888-8888";
+contactInfo2.textContent = siteContent["contact"]["phone"];
 
 const contactInfo3 = document.querySelectorAll(".contact p")[2];
-contactInfo3.textContent = "sales@greatidea.io";
+contactInfo3.textContent = siteContent["contact"]["email"];
 
 // Footer--------------------------------------
 const footerInfo = document.querySelector("footer p");
-footerInfo.textContent = "Copyright Great Idea! 2018";
+footerInfo.textContent = siteContent["footer"]["copyright"];
